@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-header d-flex justify-content-between" (click)="isexpand=!isexpand" >
+        <ng-content select="h1"></ng-content>
+        <i class="fas fa-caret-down  align-self-content" [class.d-none]="isexpand"></i>
+        <i class="fas fa-caret-up  align-self-content" [class.d-none]="!isexpand" ></i>
+    </div>
+    <div class="card-body" *ngIf="isexpand">
+        <ng-content select="p"></ng-content>
+    </div>
+</div>
+<!-- [class.d-none]="isexpand" -->

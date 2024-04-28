@@ -1,0 +1,16 @@
+<form>
+    <ng-content select="h1"></ng-content>
+   <div class="from-group">
+        <label for="email"></label>
+        <input type="text" id="email" class="form-control">
+   </div>
+   <div class="from-group">
+        <label for="password"></label>
+        <input type="text" id="password" class="form-control">
+    </div>
+    <div class="from-group">
+        <label for="confirmpassword"></label>
+        <input type="text" id="confirmpassword" class="form-control">
+    </div>
+    <ng-content select=".btn"></ng-content>
+</form>
